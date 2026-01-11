@@ -1,0 +1,31 @@
+# Source files
+src/
+demo.tsx
+index.html
+
+# Development files
+.vscode/
+.idea/
+*.log
+*.local
+
+# Git
+.git/
+.gitignore
+
+# Build tools
+vite.config.ts
+tsconfig.json
+eslint.config.mjs
+.prettierrc
+components.json
+
+# Dependencies
+node_modules/
+
+# Documentation
+README.md
+
+# Test files
+*.test.*
+*.spec.*

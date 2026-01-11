@@ -8,14 +8,32 @@ A modern React UI component library built with Vite, shadcn/ui, and Tailwind CSS
 - 🎨 shadcn/ui components with Tailwind CSS
 - 📦 Library mode with ES and UMD builds
 - 🔷 TypeScript support with type definitions
-- 🎯 React 19.2.1 compatible
+- 🎯 React 18+ and 19+ compatible
 - 🌙 Dark mode support
 - ♿️ Accessible components
 
 ## Installation
 
 ```bash
-npm install
+npm install @alperenjs/ui-library
+```
+
+## Usage
+
+**⚠️ IMPORTANT: You must import the CSS file for styles to work!**
+
+```tsx
+import { Button, Input } from '@alperenjs/ui-library'
+import '@alperenjs/ui-library/style.css'  // ⚠️ Don't forget this!
+
+function App() {
+  return (
+    <div>
+      <Button variant="default">Click me</Button>
+      <Input placeholder="Enter text" />
+    </div>
+  )
+}
 ```
 
 ## Development
@@ -43,7 +61,8 @@ This will generate:
 A versatile button component with multiple variants and sizes.
 
 ```tsx
-import { Button } from 'ui-library'
+import { Button } from '@alperenjs/ui-library'
+import '@alperenjs/ui-library/style.css'
 
 <Button variant="default" size="default">Click me</Button>
 ```
@@ -53,19 +72,12 @@ import { Button } from 'ui-library'
 A flexible input component with validation states.
 
 ```tsx
-import { Input } from 'ui-library'
+import { Input } from '@alperenjs/ui-library'
+import '@alperenjs/ui-library/style.css'
 
 <Input type="text" placeholder="Enter text" />
 ```
 
-## Usage
-
-After building, import the library in your project:
-
-```tsx
-import { Button, Input } from 'ui-library'
-import 'ui-library/style.css'
-```
 
 ## Project Structure
 

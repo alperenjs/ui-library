@@ -14,7 +14,10 @@
     "aliases": {
         "components": "~/components",
         "utils": "~/lib/utils",
-        "ui": "~/components/ui",
+        "ui": "~/components/primitives",
+        "primitives": "~/components/primitives",
+        "composed": "~/components/composed",
+        "layouts": "~/components/layouts",
         "lib": "~/lib",
         "hooks": "~/hooks"
     },

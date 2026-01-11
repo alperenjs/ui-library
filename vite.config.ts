@@ -21,7 +21,6 @@ export default defineConfig(({ command }) => {
                 ? [
                       dts({
                           insertTypesEntry: true,
-                          rollupTypes: true,
                       }),
                   ]
                 : []),
@@ -35,6 +34,7 @@ export default defineConfig(({ command }) => {
                           name: 'UILibrary',
                           fileName: (format) => `index.${format}.js`,
                       },
+                      cssCodeSplit: false,
                       rollupOptions: {
                           external: ['react', 'react-dom'],
                           output: {
@@ -42,6 +42,7 @@ export default defineConfig(({ command }) => {
                                   react: 'React',
                                   'react-dom': 'ReactDOM',
                               },
+                              assetFileNames: 'style.css',
                           },
                       },
                   },
